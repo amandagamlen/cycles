@@ -1,0 +1,98 @@
+ body {
+   margin: 0px;
+   background-color: #f00207;
+ }
+
+ .header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   overflow: hidden;
+   padding: 20px;
+   font-family: "helvetica";
+   font-weight: lighter;
+
+ }
+
+ .header a {
+   color: #4e0104;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+   mix-blend-mode: difference;
+ }
+
+ .header:hover {
+   mix-blend-mode: multiply;
+
+ }
+
+
+ .header-right {
+   position: fixed;
+   right: 0;
+   top: 0;
+   overflow: hidden;
+   padding: 20px;
+   font-family: "helvetica";
+   font-weight: lighter;
+ }
+
+ .header-right a {
+   color: #4e0104;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+   mix-blend-mode: difference;
+ }
+
+ .header-right:hover {
+   mix-blend-mode: multiply;
+ }
+
+
+ #container {
+   position: absolute;
+   margin: auto;
+   width: 100vw;
+   height: 80pt;
+   top: 0;
+   bottom: 0;
+   filter: url(#threshold) blur(6px);
+ }
+
+ #text1,
+ #text2 {
+   position: absolute;
+   width: 100%;
+   display: inline-block;
+   font-family: 'Helvetica', sans-serif;
+   font-weight: 900;
+   font-size: 80pt;
+   text-align: center;
+   user-select: none;
+   color: #250002;
+   /* color: #67180e; */
+ }
+
+ #myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+ }
+
+ .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: white;
+   text-align: center;
+ }

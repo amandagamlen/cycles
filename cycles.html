@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cycles</title>
+  <link href="cycles-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <audio autoplay>
+    <source src="cycles01.mp3" type="audio/mpeg">
+  </audio>
+  <video autoplay muted loop id="myVideo">
+    <source src="lava.mp4" type="video/mp4">
+  </video>
+  <div class="header">
+    <a target="_blank" href="https://on.soundcloud.com/7LmDS">cycles</a>
+  </div>
+  <div class="header-right">
+    <a href="#default">ime</a>
+  </div>
+  <div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
+  </div>
+
+
+  <!-- The SVG filter used to create the merging effect -->
+  <svg id="filters">
+    <defs>
+      <filter id="threshold">
+        <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="cycles.js"></script>
+
+</body>
+
+</html>

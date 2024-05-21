@@ -1,0 +1,144 @@
+ body {
+   margin: 0px;
+   background-color:#a50106;
+ }
+
+ .header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   overflow: hidden;
+   padding: 20px;
+   font-family: "helvetica";
+   font-weight: lighter;
+
+ }
+
+ .header{
+   color: #a50106;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+   mix-blend-mode: difference;
+ }
+
+ .header:hover {
+   mix-blend-mode: multiply;
+
+ }
+
+
+
+ .header-right {
+   position: fixed;
+   right: 0;
+   top: 0;
+   overflow: hidden;
+   padding: 20px;
+   font-family: "helvetica";
+   font-weight: lighter;
+ }
+
+ .header-right a {
+   color: #a50106;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+   mix-blend-mode: difference;
+ }
+
+ .header-right:hover {
+   mix-blend-mode: multiply;
+ }
+
+
+ #container {
+   position: absolute;
+   margin: auto;
+   width: 100vw;
+   height: 80pt;
+   top: 0;
+   bottom: 0;
+   filter: url(#threshold) blur(6px);
+ }
+
+ #text1,
+ #text2 {
+   position: absolute;
+   width: 100%;
+   display: inline-block;
+   font-family: 'Helvetica', sans-serif;
+   font-weight: 900;
+   font-size: 80pt;
+   text-align: center;
+   user-select: none;
+   color: #250002;
+   /* color: #67180e; */
+ }
+
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1a0001bb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: 'Helvetica';
+  font-size: 18px;
+  font-weight: lighter;
+  color: #a50106;
+  border: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ff3300;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+ #myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+ }
+
+ 
+ #track {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: 'Helvetica';
+  font-size: 18px;
+  font-weight: lighter;
+  color: #a50106;
+  background-color: #25000200;
+  border: none;
+  display: block;
+  transition: 0.3s;
+}
+
+#track:hover {
+  color: #ff3300;
+}
